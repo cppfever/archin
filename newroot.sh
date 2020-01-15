@@ -1,9 +1,6 @@
 #!/bin/bash
-
+ 
 #Now we in the changed root
-
-#Timezone
-timezone=Asia/Krasnoyarsk
 
 #Host name
 host=dips42
@@ -11,8 +8,11 @@ host=dips42
 #User
 user=dips
 
+#Timezone
+timezone=Asia/Krasnoyarsk
+
 #Windows partition
-winpart=
+winpart=/dev/sda1
 
 #Root of instalation media. May be ./ , if used some dirrectory for debugging this scripts.
 root=/

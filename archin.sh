@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 #Setup Internet. Something like wifi-menu or dhcpcd enp0s3.
 #Make filesystem partitions. Mounting will be done in this script.
 #Something like: 
@@ -7,7 +7,7 @@
 #	mkswap /dev/sda3; swapon /dev/sda3; 
 
 #Target partition. Where ArchLimux is to be installed.
-target=/dev/sda1
+target=/dev/sda4
 
 #Mount point
 mountpoint=/mnt
