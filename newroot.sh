@@ -2,6 +2,9 @@
 
 #Now we in the changed root
 
+#Timezone
+timezone=Asia/Krasnoyarsk
+
 #Host name
 host=dips42
 
@@ -21,7 +24,7 @@ echo -e "\e[36m$1\e[0m"
 
 #Setup timezone
 print_message "Make link to timezone"
-ln -sf ${root}usr/share/zoneinfo/Asia/Krasnoyarsk ${root}etc/localtime
+ln -sf ${root}usr/share/zoneinfo/$timezone ${root}etc/localtime
 cal
 
 print_message "Setup hardware clock"
