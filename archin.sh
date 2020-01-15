@@ -20,7 +20,7 @@ country=Russia
 timezone=Asia/Krasnoyarsk
 
 #Root of instalation media. May be ./ , if used some dirrectory for debugging this scripts.
-root=./
+root=/
 
 #Path of mirrorlist
 mirrorlist=${root}etc/pacman.d/mirrorlist
@@ -62,7 +62,7 @@ rm ${out}2
 print_message "Download base system and linux kernel"
 pacstrap $mountpoint base linux linux-firmware
 
-cp ./newroot.sh $mountpoint
+cp ~/archin/newroot.sh $mountpoint
 print_message "Now you must run /newroot.sh in the new filesystem."
 print_message "Change root to new filesystem"
 arch-chroot $mountpoint

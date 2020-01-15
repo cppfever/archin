@@ -5,10 +5,10 @@ Write archin to additional media.
 Begin installation of ArchLinux.
 Make partitions where ArchLinux will be installed.
 Insert media with copy of archin and mount it.
-Copy archin directory to the root of installation media.
-Change variables in begin of /archin/archin.sh and /archin/newroot.sh 
+Copy archin directory to the home directory.
+Change variables in begin of ~/archin/archin.sh and ~/archin/newroot.sh 
 files for your purposes.
-Run archin.sh, it install base system and kernel to target
+Run ~/archin/archin.sh, it install base system and kernel to target
 partition and change root to new filesystem.
 Reboot whithout installation media.
 Login as root. Run /newroot.sh on the new file system.
